@@ -19,10 +19,11 @@ payload = {'qq群名':'selenium+jmeter+loadrunner','qq群号':'106014970'}
 r  = requests.post(url=urlstr,json=payload)
 
 #3---获取结果
-print(r.text)
+# print(r.text)
 
 #返回为json类型，既可以通过r.json方法来查看结果
-print(r.json())
+a = json.dumps(payload)
+print(a)
 
 
 

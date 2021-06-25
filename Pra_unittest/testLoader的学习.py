@@ -8,12 +8,12 @@
         c-setUpClass和tearDownClass
 '''
 import os
-import my_module1
+import unittest
 from Practice.test_math import Math
 
 
 #继承unittest.TestCase
-class MyTest(my_module1.TestCase):
+class MyTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
